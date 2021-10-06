@@ -15,7 +15,7 @@
         {% else %}
         <h5>Нет картинок для показа в этой категории</h5>
         {% endif %}
-        <a rel="stylesheet" href="?{{ query|join('&')}}">Отобразить следующее изоражение</a>
+        <a rel="stylesheet" href="{% if query %}?{{ query|join('&')}}{% endif %}">Отобразить следующее изоражение</a>
     </div>
     <script>
     </script>
